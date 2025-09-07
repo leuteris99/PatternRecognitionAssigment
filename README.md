@@ -45,6 +45,10 @@ uv run main.py
 
 The script expects the dataset at `data/Dataset.npy` and will write outputs (plots, etc.) to the `output/` directory.
 
+### Dataset file
+After cloning the project, ensure the dataset file is placed at `data/Dataset.npy`.
+If the `data/` directory does not exist, create it and copy `Dataset.npy` into it.
+
 ### Notes
 - Plots for clustering and histograms are saved in `output/`.
 - The code includes multiple clustering strategies (custom masked K-means, spherical/cosine K-means, Jaccard K-medoids).

@@ -1053,6 +1053,11 @@ def main():
     Main function to implement Query 2 preprocessing: filter users and movies.
     """
     dataset_path = "data/Dataset.npy"
+    # Verify dataset presence before proceeding
+    if not os.path.exists(dataset_path):
+        print("\nERROR: Required dataset file not found.")
+        print("Please place 'Dataset.npy' in the 'data/' folder and re-run the script.")
+        return
 
     dataset = load_npy_dataset(dataset_path)
 
